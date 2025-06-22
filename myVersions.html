@@ -78,7 +78,10 @@
           <p>Address : ${this.formAddress} </p>
           <p>Gender : ${this.gender} </p>
           <p>Subjects : ${this.subject} </p>
-          <p>Location : ${this.location} </p>`;
+          <p>Location : ${this.location} </p>
+          <button onclick="window.print()">Print</button>
+        <button onclick="window.close()">Close</button>
+          `;
 
           const openNewWindow = window.open("","", "width=400 , height=400");
           openNewWindow.document.write(output);
